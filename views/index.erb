@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Júlio Santos">
+
+    <title>LinkedIn Profile Matcher</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="index">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form role="form" action="results" method="post">
+            <div class="form-group">
+              <label for="original_profile_url">Original LinkedIn profile URL</label>
+              <input type="text" class="form-control" id="original_profile_url" name="original_profile_url" placeholder="http://de.linkedin.com/in/jvsantos">
+            </div>
+            <div class="form-group">
+              <label for="other_profiles_url">Other profile URLs (one per line)</label>
+              <textarea id="other_profiles_url" name="other_profiles_url" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
